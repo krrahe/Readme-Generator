@@ -3,7 +3,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 //outline for the questions to be inserted into the readme 
 const generateREADME = ({ title, description, license, team, github }) =>
-  `<h1 align="center">${title} 👋</h1>
+  `<h1 align="center">${title} ❗</h1>
   
 ![badge](https://img.shields.io/badge/license-${license}-brightgreen)<br />
 ## Description
@@ -16,7 +16,9 @@ const generateREADME = ({ title, description, license, team, github }) =>
 <br />
 This application is covered by the ${license} license. 
 ## Team
-👪 ${team}
+👪
+Everyone who participated with this project!
+ ${team}
 <br />
 Find me on GitHub: [${github}](https://github.com/${github})<br />
 `;
